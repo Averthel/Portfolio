@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link  href=" ../static/css/main.css "  th:href="@{/ css / main.css}"  rel = "stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link href=" ../static/css/main.css " th:href="@{../static/ css / main.css}" rel="stylesheet">
 </head>
 <body>
 
@@ -22,24 +23,32 @@
             <li><a href="#">Page 2</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li><a href="#" th:href="@{/register}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#" th:href="@{/login}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
     </div>
 </nav>
+
+
 <div class="jumbotron">
     <h1>Hello World</h1>
     <p>Some cool text will be here <--</p>
-    <p>some text</p>
-    make it beautiful
+    <br/><br/>
+
+
 </div>
+
+
 <div class="container">
 
 
+</div>
 
 
+<footer>
+    <p>Footer Text</p>
+</footer>
 
-    </div>
 
 </body>
 </html>

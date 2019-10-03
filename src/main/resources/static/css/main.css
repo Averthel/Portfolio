@@ -1,18 +1,34 @@
-.jumbotron{
+.jumbotron {
     background-image: url('../img/waterfall-4478282_1920.jpg');
     text-align: center;
     color: #C0C0FF;
 }
 
-.jumbotron:hover{
+.jumbotron:hover {
     color: white;
 }
-body{
+
+body {
     background-color: gray;
 }
 
+.container {
 
-
-.container{
-    margin-top: 0px;
 }
+
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
