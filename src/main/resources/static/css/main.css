@@ -1,7 +1,7 @@
 .jumbotron {
     background-image: url('../img/waterfall-4478282_1920.jpg');
-    text-align: center;
-    color: #C0C0FF;
+
+    text-align: center; color: #C0C0FF;
 }
 
 .jumbotron:hover {
@@ -10,6 +10,7 @@
 
 body {
     background-color: gray;
+    background-image: url('../img/waterfall-4478282_1920.jpg');
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -31,4 +32,19 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.card{
+    margin: 0 auto;
+    float: left; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.clear {
+    clear: both;
+}
+
+.card-img-top{
+    background-image: url('../img/ruin-3746423_640.jpg');
+}
+
 
