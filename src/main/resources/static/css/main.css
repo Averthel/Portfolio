@@ -1,6 +1,5 @@
 .jumbotron {
     background-image: url('../img/waterfall-4478282_1920.jpg');
-
     text-align: center; color: #C0C0FF;
 }
 
@@ -23,7 +22,6 @@ body {
 }
 
 footer {
-    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -34,17 +32,19 @@ footer {
 }
 
 .card{
-    margin: 0 auto;
+    margin-right: 40px;
     float: left; /* Added */
     margin-bottom: 10px; /* Added */
+    color: #C0C0FF
 }
 
+.card:hover{
+    color: white;
+}
 .clear {
     clear: both;
 }
 
 .card-img-top{
-    background-image: url('../img/ruin-3746423_640.jpg');
+
 }
-
-

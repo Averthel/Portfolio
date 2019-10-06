@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns:th="http://www.thymeleaf.org ">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>MyPortfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link href=" ../static/css/main.css " th:href="@{../static/ css / main.css}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
 </head>
 <body>
 
-<nav class="navbar navbar-inverse" style="margin-bottom: 0">
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">WebSiteName</a>
@@ -31,37 +28,58 @@
 <div class="jumbotron">
     <h1>Hello World</h1>
     <p>Some cool text will be here <--</p>
-    <br/><br/>8
 </div>
 <div class="container">
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="card">
+        <a href="#">
+            <h4 class="card-title">Baza Wiedzy</h4>
+            <img class="card-img-top" src="../static/img/books-1245690_640.jpg" th:src="@{/img/books-1245690_640.jpg}" width="240" height="160"
+                 alt="Card image cap">
+            <div class="card-body">
+                <br/>
+                <p class="card-text">Przydatne linki, źródła oraz zasoby</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </a>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="carcard-img-topd-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="card">
+        <a href="#">
+            <h4 class="card-title">Moje Aplikacje</h4>
+            <img class="card-img-top" src="../static/img/access-close-up-code-1089438.jpg" th:src="@{/img/access-close-up-code-1089438.jpg}" eight="160" width="240" alt="Card image cap">
+            <div class="carcard-img-topd-body">
+                <br/>
+                <p class="card-text">Zbiór wybranych aplikacji webowych</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </a>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+    <div class="clear"></div>
+    <div class="card">
+        <a href="#">
+            <h4 class="card-title">Card title</h4>
+            <img class="card-img-top" src="../static/img/dark-daylight-eerie-1165982.jpg" th:src="@{/img/dark-daylight-eerie-1165982.jpg}" height="160" width="240"
+                 alt="Card image cap">
+            <div class="card-body">
+                <br/>
+                <p class="card-text">Some quick example text </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="#">
+            <h4 class="card-title">Card title</h4>
+            <img class="card-img-top" src="../static/img/dark-daylight-eerie-1165982.jpg" th:src="@{/img/dark-daylight-eerie-1165982.jpg}" height="160" width="240"
+                 alt="Card image cap">
+            <div class="card-body">
+                <br/>
+                <p class="card-text">Some quick example text </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </a>
     </div>
     <div class="clear"></div>
 </div>
-
-
 
 
 <footer>
