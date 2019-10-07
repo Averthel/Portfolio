@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
-</head>    <meta charset="UTF-8">
-    <title>Title</title>
 </head>
 <body>
-<h3>Reg. Test</h3>
+
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+<h1 style="text-align: center">Register Page</h1>
+</div>
+
+<div th:replace="fragments/footer :: footer"/>
+
 
 </body>
 </html>

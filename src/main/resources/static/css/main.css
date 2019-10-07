@@ -10,10 +10,11 @@
 body {
     background-color: gray;
     background-image: url('../img/waterfall-4478282_1920.jpg');
+
 }
 
 .container {
-
+    min-height: 800px;
 }
 
 .navbar {
@@ -22,8 +23,8 @@ body {
 }
 
 footer {
-    left: 0;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     background-color: black;
     color: white;
