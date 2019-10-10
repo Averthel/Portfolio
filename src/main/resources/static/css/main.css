@@ -45,26 +45,15 @@ footer {
 
 }
 
-/* Fixed sidenav, full height */
-.sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
+
 
 /* Fixed sidenav, full height */
 .sidenav {
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: 1;
-    top: 0;
+
+    top: 35px;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -122,3 +111,5 @@ footer {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+

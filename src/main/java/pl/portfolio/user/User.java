@@ -4,6 +4,7 @@ import pl.portfolio.comment.Comment;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.ArrayList;
@@ -18,11 +19,15 @@ public class User {
     private Long id;
     @NotEmpty
     @Size(max = 20)
+    @Column(name = "username")
     private String username;
     @Column(name = "password")
     @NotEmpty
     @Size(min = 6)
     private String password;
+    @Email
+    @Column(name = "email")
+    private String email;
     private String avatarUrl;
     @OneToMany(mappedBy = "user", cascade = CascadeType.PERSIST)
     private List<Comment> comments = new ArrayList<>();
@@ -34,10 +39,10 @@ public class User {
         getComments().add(comment);
     }
 
-    public User(String username, String password, String avatarUrl) {
+    public User(String username, String password, String email) {
         this.username = username;
         this.password = password;
-        this.avatarUrl = avatarUrl;
+        this.email = email;
     }
 
     public Long getId() {
@@ -78,5 +83,13 @@ public class User {
 
     public void setComments(List<Comment> comments) {
         this.comments = comments;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
