@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Message</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
+    <style>
+        .message{margin-top: 100px;text-align: center;color: white;}
+        p{font-size: 18px}
+    </style>
+</head>
+<body>
+<div th:replace="fragments/header :: header"/>
+
+<div class="container">
+<div class="message">
+        <h1 th:text="${message.title}">Title</h1>
+        <h3 th:text="${message.content}">Message</h3>
+        <br/>
+       <p><a th:href="@{/}">Powrót do strony głównej</a></p>
+</div>
+</div>
+
+<div th:replace="fragments/footer :: footer"/>
+</body>
+</html>

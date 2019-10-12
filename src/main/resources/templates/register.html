@@ -18,12 +18,12 @@
 <body>
 
 <div th:replace="fragments/header :: header"/>
-
 <div class="container" >
+
     <form class="form-horizontal" action="#" th:action="@{/registerUser}" method="post" >
         <fieldset>
             <div id="legend" style="margin-top: 100px;">
-                <legend>Register</legend>
+                <legend>Register <p th:text="${message}" style="color: red !important;">Message</p></legend>
             </div>
             <div class="control-group">
                 <!-- Username -->
@@ -33,7 +33,6 @@
                     <p class="help-block">Username can contain any letters or numbers, without spaces</p>
                 </div>
             </div>
-
             <div class="control-group">
                 <!-- E-mail -->
                 <label class="control-label">E-mail</label>
@@ -60,7 +59,6 @@
             </div>
         </fieldset>
     </form>
-
 
 </div>
 

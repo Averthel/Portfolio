@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+import pl.portfolio.common.Message;
 import pl.portfolio.user.User;
 import pl.portfolio.user.UserRepository;
+
 
 
 @Controller
@@ -32,15 +34,17 @@ public class UserController {
     }
 
     @PostMapping("/registerUser")
-    public String addUser(@RequestParam String username, @RequestParam String password, @RequestParam String email, Model model, RedirectAttributes redirectAttr) {
+    public String addUser(@RequestParam String username, @RequestParam String password, @RequestParam String email, RedirectAttributes redirectAttr, Model model) {
         User user = new User(username, password, email);
-        System.out.println(username);
         try {
             userRepository.save(user);
+            model.addAttribute("message", new Message("Gratulacje!", "Rejestracja przebiegła pomyslnie, witaj "+user.getUsername()));
         } catch (Exception e) {
-
+            redirectAttr.addFlashAttribute("message", "Rejestracja nie powiodła się, spróbuj jeszcze raz");
+            return "redirect:register";
         }
-        return "index";
+
+        return "message";
     }
 
 
