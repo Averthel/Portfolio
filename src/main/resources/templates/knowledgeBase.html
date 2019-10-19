@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en"  xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE>
+<html ng-app="app" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Knowledge Base</title>
@@ -9,23 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
-    <script>
-        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
 
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-    </script>
 
 </head>
 
@@ -40,19 +24,29 @@
         <a href="#services">Panel 2</a>
         <a href="#clients">Panel 3</a>
         <a href="#contact">Panel 4</a>
-        <button class="dropdown-btn">Dropdown
-            <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        <a href="#contact">Search</a>
+        <a href="#contact">Panel 5</a>
+        <a href="#contact">Panel 6</a>
+        <a href="#contact">Panel 7</a>
+        <a href="#contact">Panel 8</a>
+        <a href="#contact">Panel 9</a>
+        <a href="#contact">Panel 10</a>
+        <a href="#contact">Panel 11</a>
     </div>
+
+    <div ng-controller="HelloController as hello">
+        <h1>To proste jak {{ 2+2 }}</h1>
+        <p>{{hello.exampleVariable}}</p>
+        <br />
+        <input type="text" ng-model="hello.exampleVariable">
+        <p>{{hello.exampleVariable}}</p>
+    </div>
+
 </div>
 
 
 <div th:replace="fragments/footer :: footer"/>
+
+<script src="../static/bower_components/angular/angular.js" th:src="@{/bower_components/angular/angular.js}" type="application/javascript"></script>
+<script src="../static/js/app.js" th:src="@{/js/app.js}" type="application/javascript"></script>
 </body>
 </html>

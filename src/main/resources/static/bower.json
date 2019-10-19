@@ -1,0 +1,20 @@
+{
+  "name": "Portfolio",
+  "homepage": "https://github.com/Averthel/Portfolio",
+  "authors": [
+    "Averthel <thecojove@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.7.8"
+  }
+}
