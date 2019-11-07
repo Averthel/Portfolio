@@ -1,34 +1,28 @@
-<!DOCTYPE>
-<html data-ng-app="app" xmlns="http://www.w3.org/1999/xhtml"
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Knowledge Base</title>
+    <title>MyPortfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="../static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet">
-
-
+    <link href="../static/css/panel.css" th:href="@{/css/panel.css}" rel="stylesheet">
 </head>
 
 <body>
+
 <div th:replace="fragments/header :: header"/>
-<div class="jumbotron">
-    <h1 style="text-align: center">Baza < /> Wiedzy</h1>
-</div>
 <div class="container">
-
-
     <div th:replace="fragments/sidenav :: sidenav"/>
-
+    <h1>Lekcja Pierwsza</h1>
+    <h3>Tpy danych w Javie</h3>
+   <p>W Javie wyrózniamy następujące typy danych:</p>
+</div>
 
 
 
 </div>
-
-
 <div th:replace="fragments/footer :: footer"/>
 </body>
 </html>
